@@ -62,7 +62,6 @@ window.addEventListener('load', () => setTimeout(() => {
     [
         'accordion',
         'alert',
-        'align',
         'animation',
         'article',
         'badge',
@@ -93,7 +92,6 @@ window.addEventListener('load', () => setTimeout(() => {
         'lightbox',
         'link',
         'list',
-        'margin',
         'marker',
         'modal',
         'nav',
@@ -101,7 +99,6 @@ window.addEventListener('load', () => setTimeout(() => {
         'notification',
         'offcanvas',
         'overlay',
-        'padding',
         'pagination',
         'parallax',
         'position',
@@ -133,6 +130,9 @@ window.addEventListener('load', () => setTimeout(() => {
         'visibility',
         'width',
         'u-flex',
+        'u-float',
+        'u-margin',
+        'u-padding',
         'u-grid',
         'u-background'
     ].sort().forEach(name => append($tests, `<option value="${name}.html">${name.split('-').map(ucfirst).join(' ')}</option>`));

@@ -1,0 +1,54 @@
+// Name:            Float
+// Description:     CSS Level 2 Visual Formatting Model
+//                  https://www.w3.org/TR/CSS2/visuren.html
+//
+// Component:       `uk-float-*`
+//
+// ========================================================================
+
+
+/* ========================================================================
+   Component: Float
+ ========================================================================== */
+
+/*
+ * 1. Prevent content overflow
+ */
+
+/* 1 */
+[class*='uk-float-'] { max-width: 100%; }
+
+.uk-float-left { float: left; }
+.uk-float-right { float: right; }
+
+/* Phone landscape and bigger */
+@media (min-width: @breakpoint-small) {
+
+    .uk-float-left\@s { float: left; }
+    .uk-float-right\@s { float: right; }
+
+}
+
+/* Tablet landscape and bigger */
+@media (min-width: @breakpoint-medium) {
+
+    .uk-float-left\@m { float: left; }
+    .uk-float-right\@m { float: right; }
+
+}
+
+/* Desktop and bigger */
+@media (min-width: @breakpoint-large) {
+
+    .uk-float-left\@l { float: left; }
+    .uk-float-right\@l { float: right; }
+
+}
+
+/* Large screen and bigger */
+@media (min-width: @breakpoint-xlarge) {
+
+    .uk-float-left\@xl { float: left; }
+    .uk-float-right\@xl { float: right; }
+
+}
