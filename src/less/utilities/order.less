@@ -1,0 +1,51 @@
+// Name:            Order
+// Description:     CSS Flexible Box Layout Module Level 1
+//                  https://www.w3.org/TR/css-flexbox-1/#order-property
+//
+// Component:       `uk-order-*`
+//
+// ========================================================================
+
+
+/* ========================================================================
+   Component: Order
+ ========================================================================== */
+
+/*
+ * Initial value: `0`
+ */
+
+.uk-order-first { order: -1;}
+.uk-order-last { order: 99;}
+
+/* Phone landscape and bigger */
+@media (min-width: @breakpoint-small) {
+
+    .uk-order-first\@s { order: -1; }
+    .uk-order-last\@s { order: 99; }
+
+}
+
+/* Tablet landscape and bigger */
+@media (min-width: @breakpoint-medium) {
+
+    .uk-order-first\@m { order: -1; }
+    .uk-order-last\@m { order: 99; }
+
+}
+
+/* Desktop and bigger */
+@media (min-width: @breakpoint-large) {
+
+    .uk-order-first\@l { order: -1; }
+    .uk-order-last\@l { order: 99; }
+
+}
+
+/* Large screen and bigger */
+@media (min-width: @breakpoint-xlarge) {
+
+    .uk-order-first\@xl { order: -1; }
+    .uk-order-last\@xl { order: 99; }
+
+}

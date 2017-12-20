@@ -1,0 +1,70 @@
+// Name:            Flex
+// Description:     CSS Flexible Box Layout Module Level 1
+//                  https://www.w3.org/TR/css-flexbox-1/
+//
+// Component:       `uk-flex-*`
+//
+// ========================================================================
+
+
+/* ========================================================================
+   Component: Alignment
+ ========================================================================== */
+
+.uk-flex { display: flex }
+.uk-flex-inline { display: inline-flex; }
+
+
+/* Direction
+ ========================================================================== */
+
+/*
+ * Initial value: `row`
+ */
+
+.uk-flex-row { flex-direction: row; }
+.uk-flex-row-reverse { flex-direction: row-reverse; }
+.uk-flex-column { flex-direction: column; }
+.uk-flex-column-reverse { flex-direction: column-reverse; }
+
+
+/* Wrap
+ ========================================================================== */
+
+/*
+ * Initial value: `nowrap`
+ */
+
+.uk-flex-nowrap { flex-wrap: nowrap; }
+.uk-flex-wrap { flex-wrap: wrap; }
+.uk-flex-wrap-reverse { flex-wrap: wrap-reverse; }
+
+
+/* Item dimensions
+ ========================================================================== */
+
+/*
+ * Initial value: `0 1 auto`
+ * Content dimensions, but shrinks
+ */
+
+/*
+ * No Flex: `0 0 auto`
+ * Content dimensions
+ */
+
+.uk-flex-none { flex: none; }
+
+/*
+ * Relative Flex: `1 1 auto`
+ * Space is allocated considering content
+ */
+
+.uk-flex-auto { flex: auto; }
+
+/*
+ * Absolute Flex: `1 1 0%`
+ * Space is allocated solely based on flex
+ */
+
+.uk-flex-1 { flex: 1; }

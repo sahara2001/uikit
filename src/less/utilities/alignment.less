@@ -1,0 +1,110 @@
+// Name:            Alignment
+// Description:     CSS Box Alignment Module Level 3
+//                  https://www.w3.org/TR/css-align-3/#overview
+//
+// Component:       `uk-justify-*`
+//                  `uk-align-*`
+//
+// ========================================================================
+
+
+/* ========================================================================
+   Component: Alignment
+ ========================================================================== */
+
+
+/* Aligning flex items/lines and grid tracks within their container
+ ========================================================================== */
+
+/*
+ * Align along the main/row axis (left/right)
+ * Initial value: `flex-start` for flex and `stretch` for grid
+ */
+
+.uk-justify-content-start { justify-content: flex-start; }
+.uk-justify-content-end { justify-content: flex-end; }
+.uk-justify-content-center { justify-content: center; }
+.uk-justify-content-between { justify-content: space-between; }
+.uk-justify-content-around { justify-content: space-around; }
+
+
+/* Phone landscape and bigger */
+@media (min-width: @breakpoint-small) {
+
+    .uk-justify-content-start\@s { justify-content: flex-start; }
+    .uk-justify-content-end\@s { justify-content: flex-end; }
+    .uk-justify-content-center\@s { justify-content: center; }
+    .uk-justify-content-between\@s { justify-content: space-between; }
+    .uk-justify-content-around\@s { justify-content: space-around; }
+
+}
+
+/* Tablet landscape and bigger */
+@media (min-width: @breakpoint-medium) {
+
+    .uk-justify-content-start\@m { justify-content: flex-start; }
+    .uk-justify-content-end\@m { justify-content: flex-end; }
+    .uk-justify-content-center\@m { justify-content: center; }
+    .uk-justify-content-between\@m { justify-content: space-between; }
+    .uk-justify-content-around\@m { justify-content: space-around; }
+
+}
+
+/* Desktop and bigger */
+@media (min-width: @breakpoint-large) {
+
+    .uk-justify-content-start\@l { justify-content: flex-start; }
+    .uk-justify-content-end\@l { justify-content: flex-end; }
+    .uk-justify-content-center\@l { justify-content: center; }
+    .uk-justify-content-between\@l { justify-content: space-between; }
+    .uk-justify-content-around\@l { justify-content: space-around; }
+
+}
+
+/* Large screen and bigger */
+@media (min-width: @breakpoint-xlarge) {
+
+    .uk-justify-content-start\@xl { justify-content: flex-start; }
+    .uk-justify-content-end\@xl { justify-content: flex-end; }
+    .uk-justify-content-center\@xl { justify-content: center; }
+    .uk-justify-content-between\@xl { justify-content: space-between; }
+    .uk-justify-content-around\@xl { justify-content: space-around; }
+
+}
+
+/*
+ * Align along the cross/column axis (top/bottom)
+ * For flex containers, this only has an effect if their are multi-lines.
+ * Initial value: `stretch`
+ */
+
+.uk-align-content-start { align-content: flex-start; }
+.uk-align-content-center { align-content: center; }
+.uk-align-content-end { align-content: flex-end; }
+.uk-align-content-stretch { align-content: stretch; }
+.uk-align-content-between { align-content: space-between; }
+.uk-align-content-around { align-content: space-around; }
+
+
+/* Aligning items within their flex line and grid area
+ ========================================================================== */
+
+/*
+ * Align along the row axis (left/right). Does not apply to flex.
+ * Initial value: `stretch`
+ */
+
+.uk-justify-items-start { justify-items: start; }
+.uk-justify-items-end { justify-items: end; }
+.uk-justify-items-center { justify-items: center; }
+.uk-justify-items-stretch { justify-items: stretch; }
+
+/*
+ * Align along the cross/column axis (top/bottom).
+ * Initial value: `stretch`
+ */
+
+.uk-align-items-start { align-items: flex-start; }
+.uk-align-items-end { align-items: flex-end; }
+.uk-align-items-center { align-items: center; }
+.uk-align-items-stretch { align-items: stretch; }
