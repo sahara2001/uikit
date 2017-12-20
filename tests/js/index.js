@@ -82,7 +82,6 @@ window.addEventListener('load', () => setTimeout(() => {
         'dotnav',
         'drop',
         'dropdown',
-        'flex',
         'form',
         'grid',
         'grid-parallax',
@@ -133,7 +132,9 @@ window.addEventListener('load', () => setTimeout(() => {
         'utility',
         'upload',
         'visibility',
-        'width'
+        'width',
+        'u-flex',
+        'u-grid'
     ].sort().forEach(name => append($tests, `<option value="${name}.html">${name.split('-').map(ucfirst).join(' ')}</option>`));
 
     on($tests, 'change', () => {
