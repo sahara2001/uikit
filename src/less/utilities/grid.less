@@ -1,7 +1,8 @@
 // Name:            Grid
-// Description:     Component to create two dimensional grids
+// Description:     CSS Grid Layout Module Level 1
+//                  https://www.w3.org/TR/css-grid-1/
 //
-// Component:       `uk-grid2`
+// Component:       `uk-grid-*`
 //
 // ========================================================================
 
@@ -16,6 +17,7 @@
 @grid-column-xlarge:                            500px;
 @grid-column-xxlarge:                           600px;
 
+@grid-gap-xsmall:                               5px;
 @grid-gap-small:                                @global-small-gutter;
 @grid-gap-medium:                               @global-gutter;
 @grid-gap-large:                                @global-large-gutter;
@@ -29,27 +31,26 @@
 .uk-grid-inline { display: inline-grid; }
 
 
-/* Columns Width
+/* Columns
  ========================================================================== */
 
-.uk-grid-column-xsmall { grid-template-columns: repeat(auto-fill, minmax(@grid-column-xsmall,1fr)); }
-.uk-grid-column-small { grid-template-columns: repeat(auto-fill, minmax(@grid-column-small,1fr)); }
-.uk-grid-column-medium { grid-template-columns: repeat(auto-fill, minmax(@grid-column-medium,1fr)); }
-.uk-grid-column-large { grid-template-columns: repeat(auto-fill, minmax(@grid-column-large,1fr)); }
-.uk-grid-column-xlarge { grid-template-columns: repeat(auto-fill, minmax(@grid-column-xlarge,1fr)); }
-.uk-grid-column-xxlarge { grid-template-columns: repeat(auto-fill, minmax(@grid-column-xxlarge,1fr)); }
+/*
+ * Template (Explicit)
+ */
+
+.uk-grid-columns-xsmall { grid-template-columns: repeat(auto-fill, minmax(@grid-column-xsmall,1fr)); }
+.uk-grid-columns-small { grid-template-columns: repeat(auto-fill, minmax(@grid-column-small,1fr)); }
+.uk-grid-columns-medium { grid-template-columns: repeat(auto-fill, minmax(@grid-column-medium,1fr)); }
+.uk-grid-columns-large { grid-template-columns: repeat(auto-fill, minmax(@grid-column-large,1fr)); }
+.uk-grid-columns-xlarge { grid-template-columns: repeat(auto-fill, minmax(@grid-column-xlarge,1fr)); }
+.uk-grid-columns-xxlarge { grid-template-columns: repeat(auto-fill, minmax(@grid-column-xxlarge,1fr)); }
+
+/*
+ * Auto (Implicit)
+ */
 
 
-/* Gap
- ========================================================================== */
-
-.uk-grid-gap-none { grid-gap: 0; }
-.uk-grid-gap-small { grid-gap: @grid-gap-small; }
-.uk-grid-gap-medium { grid-gap: @grid-gap-medium; }
-.uk-grid-gap-large { grid-gap: @grid-gap-large; }
-
-
-/* Auto Placement
+/* Automatic Placement
  ========================================================================== */
 
 // Default
@@ -66,4 +67,62 @@
 .uk-grid-item-span-3 { grid-column-start: span 3; }
 .uk-grid-item-span-4 { grid-column-start: span 4; }
 .uk-grid-item-span-5 { grid-column-start: span 5; }
+
+
+
+/* Gap
+ ========================================================================== */
+
+.uk-grid-gap-none { grid-gap: 0; }
+.uk-grid-gap-xsmall { grid-gap: @grid-gap-xsmall; }
+.uk-grid-gap-small { grid-gap: @grid-gap-small; }
+.uk-grid-gap-medium { grid-gap: @grid-gap-medium; }
+.uk-grid-gap-large { grid-gap: @grid-gap-large; }
+
+/* Phone landscape and bigger */
+@media (min-width: @breakpoint-small) {
+
+    .uk-grid-gap-none\@s { grid-gap: 0; }
+    .uk-grid-gap-xsmall\@s { grid-gap: @grid-gap-xsmall; }
+    .uk-grid-gap-small\@s { grid-gap: @grid-gap-small; }
+    .uk-grid-gap-medium\@s { grid-gap: @grid-gap-medium; }
+    .uk-grid-gap-large\@s { grid-gap: @grid-gap-large; }
+
+}
+
+/* Tablet landscape and bigger */
+@media (min-width: @breakpoint-medium) {
+
+    .uk-grid-gap-none\@m { grid-gap: 0; }
+    .uk-grid-gap-xsmall\@m { grid-gap: @grid-gap-xsmall; }
+    .uk-grid-gap-small\@m { grid-gap: @grid-gap-small; }
+    .uk-grid-gap-medium\@m { grid-gap: @grid-gap-medium; }
+    .uk-grid-gap-large\@m { grid-gap: @grid-gap-large; }
+
+}
+
+/* Desktop and bigger */
+@media (min-width: @breakpoint-large) {
+
+    .uk-grid-gap-none\@l { grid-gap: 0; }
+    .uk-grid-gap-xsmall\@l { grid-gap: @grid-gap-xsmall; }
+    .uk-grid-gap-small\@l { grid-gap: @grid-gap-small; }
+    .uk-grid-gap-medium\@l { grid-gap: @grid-gap-medium; }
+    .uk-grid-gap-large\@l { grid-gap: @grid-gap-large; }
+
+}
+
+/* Large screen and bigger */
+@media (min-width: @breakpoint-xlarge) {
+
+    .uk-grid-gap-none\@xl { grid-gap: 0; }
+    .uk-grid-gap-xsmall\@xl { grid-gap: @grid-gap-xsmall; }
+    .uk-grid-gap-small\@xl { grid-gap: @grid-gap-small; }
+    .uk-grid-gap-medium\@xl { grid-gap: @grid-gap-medium; }
+    .uk-grid-gap-large\@xl { grid-gap: @grid-gap-large; }
+
+}
+
+
+
 
