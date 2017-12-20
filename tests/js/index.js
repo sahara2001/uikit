@@ -65,7 +65,6 @@ window.addEventListener('load', () => setTimeout(() => {
         'align',
         'animation',
         'article',
-        'background',
         'badge',
         'base',
         'breadcrumb',
@@ -134,7 +133,8 @@ window.addEventListener('load', () => setTimeout(() => {
         'visibility',
         'width',
         'u-flex',
-        'u-grid'
+        'u-grid',
+        'u-background'
     ].sort().forEach(name => append($tests, `<option value="${name}.html">${name.split('-').map(ucfirst).join(' ')}</option>`));
 
     on($tests, 'change', () => {
