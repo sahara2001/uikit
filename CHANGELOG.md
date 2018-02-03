@@ -4,15 +4,72 @@
 
 ### Fixed
 
+- Fix using Scrollspy component with default values
+- Fix Scrollspy if UIkit is loaded async
+- Fix YouTube short urls in Lightbox component
+- Fix empty select in Form Custom component 
+
+## 3.0.0 beta 39 (January 31, 2018)
+
+### Added
+
+- Add link heading to Link component
+- Add Slider Parallax component
+- Add support for privacy enhanced mode in YouTube urls
+
+### Changed
+
+- _Active_ classes are applied to all fully visible slides in Slider component
+- Allow all Lightbox Panel options to be set through Lightbox component
+
+### Fixed
+
+- Fix Slider Nav initially has no state
+- Fix Esc closing on Confirm and Prompt dialogs
+- Fix using Grids in Slider component in Safari
+- Fix edge scrolling in Sortable component in IE 11
+- Fix touch scrolling in Slideshow/Slider in Edge
+- Fix tap event on touch devices
+- Fix initial Drop positioning
+
+## 3.0.0 beta 38 (January 18, 2018)
+
+### Added
+
+- Add support to center elements outside of a container to Position component
+
+### Changed
+
+- Add `uk-slider-container` class to clip the Slider component
+- Removed auto-clipping from Slider items. Use `uk-cover-container` instead.
+
+### Fixed
+
+- Fix Tooltip in Accordion loosing title
+- Fix Inverse mode (Light and Dark) in tests
+- Fix component getter
+
+## 3.0.0 beta 37 (January 16, 2018)
+
+### Added
+
+- Add `beforeConnect` and `beforeDisconnect` component hooks
+
+### Fixed
+
 - Fix origin modifier for programmatically triggered animations
 - Dialogs correctly cleanup after closing
 - Fix missing container option on Tooltip component
 - Fix positioning of Dropdowns in Dropbar
+- Fix browser freezing on Slider resize
+- Fix Custom Form initial value
+- Fix Tooltip removing title attribute
 
 ## 3.0.0 beta 36 (January 11, 2018)
 
 ### Added
 
+- Add Slider component
 - Add RTL support to Slideshow component
 - Add reactive navigation to Slideshow component
 - Hide slideshow navigation if slideshow contains single slide only
