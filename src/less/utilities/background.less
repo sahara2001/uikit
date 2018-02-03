@@ -1,33 +1,21 @@
-// Name:            Background
-// Description:     CSS Backgrounds and Borders Module Level 3
-//                  https://www.w3.org/TR/css-backgrounds-3/
-//
-// Component:       `uk-background-*`
-//
-// ========================================================================
-
-
-// Variables
-// ========================================================================
-
-@background-default-background:                 @global-background;
-@background-muted-background:                   @global-muted-background;
-@background-primary-background:                 @global-primary-background;
-@background-secondary-background:               @global-secondary-background;
-
-
 /* ========================================================================
-   Component: Background
+ *
+ * Background
+ * CSS Backgrounds and Borders Module Level 3
+ * https://www.w3.org/TR/css-backgrounds-3/
+ *
+ * `uk-background-*`
+ *
  ========================================================================== */
 
 
 /* Color
  ========================================================================== */
 
-.uk-background-default { background-color: @background-default-background; }
-.uk-background-muted { background-color: @background-muted-background; }
-.uk-background-primary { background-color: @background-primary-background; }
-.uk-background-secondary { background-color: @background-secondary-background; }
+.uk-background-default { background-color: var(--background-default); }
+.uk-background-muted { background-color: var(--background-muted); }
+.uk-background-primary { background-color: var(--background-primary); }
+.uk-background-secondary { background-color: var(--background-secondary); }
 
 
 /* Size
