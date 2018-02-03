@@ -1,78 +1,429 @@
 /* ========================================================================
  *
  * Padding
- * ???
- * ???
+ * CSS Level 2 Box model
+ * https://www.w3.org/TR/CSS2/box.html
  *
  * `uk-padding-*`
  *
  ========================================================================== */
 
-// Variables
-// ========================================================================
+/* X-Small */
+.uk-padding-xsmall { padding: var(--padding-xsmall); }
 
-@padding-padding:                                       @global-gutter;
-@padding-padding-l:                                     @global-medium-gutter;
+.uk-padding-y-xsmall {
+    padding-top: var(--padding-xsmall);
+    padding-bottom: var(--padding-xsmall);
+}
 
-@padding-small-padding:                                 @global-small-gutter;
+.uk-padding-x-xsmall {
+    padding-left: var(--padding-xsmall);
+    padding-right: var(--padding-xsmall);
+}
 
-@padding-large-padding:                                 @global-gutter;
-@padding-large-padding-l:                               @global-large-gutter;
+/* Small */
+.uk-padding-small { padding: var(--padding-small); }
 
+.uk-padding-y-small {
+    padding-top: var(--padding-small);
+    padding-bottom: var(--padding-small);
+}
 
+.uk-padding-x-small {
+    padding-left: var(--padding-small);
+    padding-right: var(--padding-small);
+}
 
-.uk-padding { padding: @padding-padding; }
+/* Medium */
+.uk-padding-medium { padding: var(--padding-medium); }
+
+.uk-padding-y-medium {
+    padding-top: var(--padding-medium);
+    padding-bottom: var(--padding-medium);
+}
+
+.uk-padding-x-medium {
+    padding-left: var(--padding-medium);
+    padding-right: var(--padding-medium);
+}
+
+/* Large */
+.uk-padding-large { padding: var(--padding-large); }
+
+.uk-padding-y-large {
+    padding-top: var(--padding-large);
+    padding-bottom: var(--padding-large);
+}
+
+.uk-padding-x-large {
+    padding-left: var(--padding-large);
+    padding-right: var(--padding-large);
+}
+
+/* X-Large */
+.uk-padding-xlarge { padding: var(--padding-xlarge); }
+
+.uk-padding-y-xlarge {
+    padding-top: var(--padding-xlarge);
+    padding-bottom: var(--padding-xlarge);
+}
+
+.uk-padding-x-xlarge {
+    padding-left: var(--padding-xlarge);
+    padding-right: var(--padding-xlarge);
+}
+
+/* None */
+.uk-padding-none { padding: 0; }
+
+.uk-padding-top-none,
+.uk-padding-y-none { padding-top: 0; }
+
+.uk-padding-bottom-none,
+.uk-padding-y-none { padding-bottom: 0; }
+
+.uk-padding-left-none,
+.uk-padding-x-none { padding-left: 0; }
+
+.uk-padding-right-none,
+.uk-padding-x-none { padding-right: 0; }
+
+/* Phone landscape and bigger */
+@media (min-width: @breakpoint-small) {
+
+    /* X-Small */
+    .uk-padding-xsmall\@s { padding: var(--padding-xsmall); }
+
+    .uk-padding-y-xsmall\@s {
+        padding-top: var(--padding-xsmall);
+        padding-bottom: var(--padding-xsmall);
+    }
+
+    .uk-padding-x-xsmall\@s {
+        padding-left: var(--padding-xsmall);
+        padding-right: var(--padding-xsmall);
+    }
+
+    /* Small */
+    .uk-padding-small\@s { padding: var(--padding-small); }
+
+    .uk-padding-y-small\@s {
+        padding-top: var(--padding-small);
+        padding-bottom: var(--padding-small);
+    }
+
+    .uk-padding-x-small\@s {
+        padding-left: var(--padding-small);
+        padding-right: var(--padding-small);
+    }
+
+    /* Medium */
+    .uk-padding-medium\@s { padding: var(--padding-medium); }
+
+    .uk-padding-y-medium\@s {
+        padding-top: var(--padding-medium);
+        padding-bottom: var(--padding-medium);
+    }
+
+    .uk-padding-x-medium\@s {
+        padding-left: var(--padding-medium);
+        padding-right: var(--padding-medium);
+    }
+
+    /* Large */
+    .uk-padding-large\@s { padding: var(--padding-large); }
+
+    .uk-padding-y-large\@s {
+        padding-top: var(--padding-large);
+        padding-bottom: var(--padding-large);
+    }
+
+    .uk-padding-x-large\@s {
+        padding-left: var(--padding-large);
+        padding-right: var(--padding-large);
+    }
+
+    /* X-Large */
+    .uk-padding-xlarge\@s { padding: var(--padding-xlarge); }
+
+    .uk-padding-y-xlarge\@s {
+        padding-top: var(--padding-xlarge);
+        padding-bottom: var(--padding-xlarge);
+    }
+
+    .uk-padding-x-xlarge\@s {
+        padding-left: var(--padding-xlarge);
+        padding-right: var(--padding-xlarge);
+    }
+
+    /* None */
+    .uk-padding-none\@s { padding: 0; }
+
+    .uk-padding-top-none\@s,
+    .uk-padding-y-none\@s { padding-top: 0; }
+
+    .uk-padding-bottom-none\@s,
+    .uk-padding-y-none\@s { padding-bottom: 0; }
+
+    .uk-padding-left-none\@s,
+    .uk-padding-x-none\@s { padding-left: 0; }
+
+    .uk-padding-right-none\@s,
+    .uk-padding-x-none\@s { padding-right: 0; }
+
+}
+
+/* Tablet landscape and bigger */
+@media (min-width: @breakpoint-medium) {
+
+    /* X-Small */
+    .uk-padding-xsmall\@m { padding: var(--padding-xsmall); }
+
+    .uk-padding-y-xsmall\@m {
+        padding-top: var(--padding-xsmall);
+        padding-bottom: var(--padding-xsmall);
+    }
+
+    .uk-padding-x-xsmall\@m {
+        padding-left: var(--padding-xsmall);
+        padding-right: var(--padding-xsmall);
+    }
+
+    /* Small */
+    .uk-padding-small\@m { padding: var(--padding-small); }
+
+    .uk-padding-y-small\@m {
+        padding-top: var(--padding-small);
+        padding-bottom: var(--padding-small);
+    }
+
+    .uk-padding-x-small\@m {
+        padding-left: var(--padding-small);
+        padding-right: var(--padding-small);
+    }
+
+    /* Medium */
+    .uk-padding-medium\@m { padding: var(--padding-medium); }
+
+    .uk-padding-y-medium\@m {
+        padding-top: var(--padding-medium);
+        padding-bottom: var(--padding-medium);
+    }
+
+    .uk-padding-x-medium\@m {
+        padding-left: var(--padding-medium);
+        padding-right: var(--padding-medium);
+    }
+
+    /* Large */
+    .uk-padding-large\@m { padding: var(--padding-large); }
+
+    .uk-padding-y-large\@m {
+        padding-top: var(--padding-large);
+        padding-bottom: var(--padding-large);
+    }
+
+    .uk-padding-x-large\@m {
+        padding-left: var(--padding-large);
+        padding-right: var(--padding-large);
+    }
+
+    /* X-Large */
+    .uk-padding-xlarge\@m { padding: var(--padding-xlarge); }
+
+    .uk-padding-y-xlarge\@m {
+        padding-top: var(--padding-xlarge);
+        padding-bottom: var(--padding-xlarge);
+    }
+
+    .uk-padding-x-xlarge\@m {
+        padding-left: var(--padding-xlarge);
+        padding-right: var(--padding-xlarge);
+    }
+
+    /* None */
+    .uk-padding-none\@m { padding: 0; }
+
+    .uk-padding-top-none\@m,
+    .uk-padding-y-none\@m { padding-top: 0; }
+
+    .uk-padding-bottom-none\@m,
+    .uk-padding-y-none\@m { padding-bottom: 0; }
+
+    .uk-padding-left-none\@m,
+    .uk-padding-x-none\@m { padding-left: 0; }
+
+    .uk-padding-right-none\@m,
+    .uk-padding-x-none\@m { padding-right: 0; }
+
+}
 
 /* Desktop and bigger */
 @media (min-width: @breakpoint-large) {
 
-    .uk-padding { padding: @padding-padding-l; }
+    /* X-Small */
+    .uk-padding-xsmall\@l { padding: var(--padding-xsmall); }
+
+    .uk-padding-y-xsmall\@l {
+        padding-top: var(--padding-xsmall);
+        padding-bottom: var(--padding-xsmall);
+    }
+
+    .uk-padding-x-xsmall\@l {
+        padding-left: var(--padding-xsmall);
+        padding-right: var(--padding-xsmall);
+    }
+
+    /* Small */
+    .uk-padding-small\@l { padding: var(--padding-small); }
+
+    .uk-padding-y-small\@l {
+        padding-top: var(--padding-small);
+        padding-bottom: var(--padding-small);
+    }
+
+    .uk-padding-x-small\@l {
+        padding-left: var(--padding-small);
+        padding-right: var(--padding-small);
+    }
+
+    /* Medium */
+    .uk-padding-medium\@l { padding: var(--padding-medium); }
+
+    .uk-padding-y-medium\@l {
+        padding-top: var(--padding-medium);
+        padding-bottom: var(--padding-medium);
+    }
+
+    .uk-padding-x-medium\@l {
+        padding-left: var(--padding-medium);
+        padding-right: var(--padding-medium);
+    }
+
+    /* Large */
+    .uk-padding-large\@l { padding: var(--padding-large); }
+
+    .uk-padding-y-large\@l {
+        padding-top: var(--padding-large);
+        padding-bottom: var(--padding-large);
+    }
+
+    .uk-padding-x-large\@l {
+        padding-left: var(--padding-large);
+        padding-right: var(--padding-large);
+    }
+
+    /* X-Large */
+    .uk-padding-xlarge\@l { padding: var(--padding-xlarge); }
+
+    .uk-padding-y-xlarge\@l {
+        padding-top: var(--padding-xlarge);
+        padding-bottom: var(--padding-xlarge);
+    }
+
+    .uk-padding-x-xlarge\@l {
+        padding-left: var(--padding-xlarge);
+        padding-right: var(--padding-xlarge);
+    }
+
+    /* None */
+    .uk-padding-none\@l { padding: 0; }
+
+    .uk-padding-top-none\@l,
+    .uk-padding-y-none\@l { padding-top: 0; }
+
+    .uk-padding-bottom-none\@l,
+    .uk-padding-y-none\@l { padding-bottom: 0; }
+
+    .uk-padding-left-none\@l,
+    .uk-padding-x-none\@l { padding-left: 0; }
+
+    .uk-padding-right-none\@l,
+    .uk-padding-x-none\@l { padding-right: 0; }
 
 }
 
+/* Large screen and bigger */
+@media (min-width: @breakpoint-xlarge) {
 
-/* Small
- ========================================================================== */
+    /* X-Small */
+    .uk-padding-xsmall\@xl { padding: var(--padding-xsmall); }
 
-.uk-padding-small { padding: @padding-small-padding; }
+    .uk-padding-y-xsmall\@xl {
+        padding-top: var(--padding-xsmall);
+        padding-bottom: var(--padding-xsmall);
+    }
 
+    .uk-padding-x-xsmall\@xl {
+        padding-left: var(--padding-xsmall);
+        padding-right: var(--padding-xsmall);
+    }
 
-/* Large
- ========================================================================== */
+    /* Small */
+    .uk-padding-small\@xl { padding: var(--padding-small); }
 
-.uk-padding-large { padding: @padding-large-padding; }
+    .uk-padding-y-small\@xl {
+        padding-top: var(--padding-small);
+        padding-bottom: var(--padding-small);
+    }
 
-/* Desktop and bigger */
-@media (min-width: @breakpoint-large) {
+    .uk-padding-x-small\@xl {
+        padding-left: var(--padding-small);
+        padding-right: var(--padding-small);
+    }
 
-    .uk-padding-large { padding: @padding-large-padding-l; }
+    /* Medium */
+    .uk-padding-medium\@xl { padding: var(--padding-medium); }
+
+    .uk-padding-y-medium\@xl {
+        padding-top: var(--padding-medium);
+        padding-bottom: var(--padding-medium);
+    }
+
+    .uk-padding-x-medium\@xl {
+        padding-left: var(--padding-medium);
+        padding-right: var(--padding-medium);
+    }
+
+    /* Large */
+    .uk-padding-large\@xl { padding: var(--padding-large); }
+
+    .uk-padding-y-large\@xl {
+        padding-top: var(--padding-large);
+        padding-bottom: var(--padding-large);
+    }
+
+    .uk-padding-x-large\@xl {
+        padding-left: var(--padding-large);
+        padding-right: var(--padding-large);
+    }
+
+    /* X-Large */
+    .uk-padding-xlarge\@xl { padding: var(--padding-xlarge); }
+
+    .uk-padding-y-xlarge\@xl {
+        padding-top: var(--padding-xlarge);
+        padding-bottom: var(--padding-xlarge);
+    }
+
+    .uk-padding-x-xlarge\@xl {
+        padding-left: var(--padding-xlarge);
+        padding-right: var(--padding-xlarge);
+    }
+
+    /* None */
+    .uk-padding-none\@xl { padding: 0; }
+
+    .uk-padding-top-none\@xl,
+    .uk-padding-y-none\@xl { padding-top: 0; }
+
+    .uk-padding-bottom-none\@xl,
+    .uk-padding-y-none\@xl { padding-bottom: 0; }
+
+    .uk-padding-left-none\@xl,
+    .uk-padding-x-none\@xl { padding-left: 0; }
+
+    .uk-padding-right-none\@xl,
+    .uk-padding-x-none\@xl { padding-right: 0; }
 
 }
-
-
-/* Remove
- ========================================================================== */
-
-.uk-padding-remove { padding: 0 !important; }
-.uk-padding-remove-top { padding-top: 0 !important; }
-.uk-padding-remove-bottom { padding-bottom: 0 !important; }
-.uk-padding-remove-left { padding-left: 0 !important; }
-.uk-padding-remove-right { padding-right: 0 !important; }
-
-.uk-padding-remove-vertical {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-.uk-padding-remove-horizontal {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-
-// Hooks
-// ========================================================================
-
-.hook-padding-misc;
-
-.hook-padding-misc() {}
